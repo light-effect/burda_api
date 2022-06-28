@@ -119,7 +119,7 @@ class ApiLoginController extends AbstractController
                 new Assert\NotBlank()
             ],
             'repeatPassword' => [
-                new Assert\NotBlank()
+                new Assert\Optional()
             ],
             'email' => [
                 new Assert\NotBlank(),
